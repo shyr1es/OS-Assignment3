@@ -2,7 +2,9 @@
 Solution for Question 3.27:
 Design a File-Copying Program Using Ordinary Pipes:
 
-This program copies the content of one file to another using a parent-child process with a pipe for data transfer. The parent process reads the source file and writes to the pipe, while the child process reads from the pipe and writes to the destination file.
+This program copies the content of one file to another using a parent-child process with a pipe for data transfer. 
+The parent process reads the source file and writes to the pipe, 
+while the child process reads from the pipe and writes to the destination file.
 
 Explanation:
 Arguments:
