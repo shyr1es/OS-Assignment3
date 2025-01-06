@@ -1,0 +1,12 @@
+3.4 Some computer systems provide multiple register sets. 
+Describe what happens when a context switch occurs if the new context is already loaded 
+into one of the register sets. What happens if the new context is in memory rather than in a register 
+set and all the register sets are in use?
+
+If the new context is in a register set: The processor directly 
+switches to the appropriate set of registers, enabling a faster context switch.
+
+If the new context is in memory and all register sets are occupied: 
+The operating system saves one of the current register sets to memory, 
+freeing it up to load the new context. 
+This process adds more overhead due to the extra memory operations.

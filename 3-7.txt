@@ -1,0 +1,11 @@
+3.7 Assume that a distributed system is susceptible to server failure. 
+What mechanisms would be required to guarantee the “exactly once” semantic for execution of RPCs?
+
+Unique Identifiers for Requests: Ensures that the server can detect and handle duplicate requests correctly.
+
+Persistent Logs: The server keeps a record of completed operations, enabling recovery after a failure.
+
+Reliable Communication Channels: 
+Mechanisms like retransmissions ensure that messages (including acknowledgments) are delivered.
+
+Idempotent Design: Operations should be crafted so that re-execution does not cause unwanted effects.

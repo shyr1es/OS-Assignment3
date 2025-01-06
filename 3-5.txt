@@ -1,0 +1,8 @@
+3.5 When a process creates a new process using the fork() operation, 
+which of the following states is shared between the parent process and the child process?
+
+The correct answer is:
+
+c. Shared memory segments
+
+Explicitly created shared memory segments are accessible to both parent and child processes.

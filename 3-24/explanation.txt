@@ -1,0 +1,15 @@
+Explanation:
+Server Side:
+
+Listens on port 5575.
+Sends a hardcoded haiku to any connected client.
+Client Side:
+
+Connects to the server on port 5575.
+Receives and prints the haiku.
+Steps to Compile and Run:
+
+Compile the server: gcc HaikuServer.c -o HaikuServer
+Compile the client: gcc HaikuClient.c -o HaikuClient
+Run the server: ./HaikuServer
+Run the client: ./HaikuClient

@@ -1,0 +1,8 @@
+3.10 Explain the role of the init (or systemd) process on UNIX and Linux systems in regard to process termination.
+
+The init/systemd process acts as the parent for orphaned processes, ensuring they terminate correctly.
+
+It cleans up resources allocated to child processes and removes their entries from the process table.
+
+This prevents zombie processes from accumulating in the system.
+

@@ -1,0 +1,11 @@
+3.15 Consider the RPC mechanism. Describe the undesirable consequences that could arise 
+from not enforcing either the “at most once” or 
+“exactly once” semantic. Describe possible uses for a mechanism that has neither of these guarantees.
+
+Issues Without “At Most Once”: Duplicate operations can lead to inconsistent states.
+
+Issues Without “Exactly Once”: Lost operations can result in incomplete tasks.
+
+Possible Use Cases: A mechanism without strict 
+guarantees might be suitable for non-critical tasks like periodic logging or telemetry,
+ where occasional data loss or duplication is acceptable.

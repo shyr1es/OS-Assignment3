@@ -1,0 +1,21 @@
+Explanation:
+Server Side:
+
+Listens on port 6017.
+Handles multiple clients using threads.
+Reads data from clients and echoes it back.
+Client Side:
+
+Connects to the echo server.
+Sends messages typed by the user to the server.
+Displays the echoed messages from the server.
+Steps to Compile and Run:
+
+Compile the server: javac EchoServer.java
+Compile the client: javac EchoClient.java
+Run the server: java EchoServer
+Run the client: java EchoClient
+Testing:
+
+Type messages in the client program and observe them echoed back.
+Type "exit" to close the client connection.

@@ -1,0 +1,11 @@
+Original versions of Apple’s mobile iOS operating system provided no means of concurrent processing. 
+Discuss three major complications that concurrent processing adds to an operating system.
+
+Data Races: Multiple processes or threads trying to access shared resources 
+at the same time can result in unpredictable outcomes.
+
+Deadlocks: A situation where two or 
+more processes are stuck waiting for each other to release resources, leading to a system freeze.
+
+Overhead of Synchronization: Managing coordination between processes requires additional 
+resources like locks or semaphores, increasing  system complexity.

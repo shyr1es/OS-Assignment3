@@ -1,0 +1,4 @@
+Steps to Compile and Run:
+Compile: gcc PipeMessageTransform.c -o PipeMessageTransform
+Run: ./PipeMessageTransform
+Enter a message when prompted, and the program will display the transformed message.

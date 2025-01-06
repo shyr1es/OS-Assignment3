@@ -1,0 +1,10 @@
+3.14 Give an example of a situation in which ordinary pipes are more suitable 
+than named pipes and an example of a situation in which 
+named pipes are more suitable than ordinary pipes.
+
+Ordinary Pipes: 
+Best suited for parent-child process communication. 
+Example: A shell passing data to a child process for execution.
+
+Named Pipes: Useful for unrelated processes that need to communicate. 
+Example: A producer-consumer system where data is passed between independent processes.

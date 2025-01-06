@@ -1,0 +1,23 @@
+3.19 Write a C program called time.c that determines the amount of time necessary to run a command from the command line.
+
+This program will:
+
+Use fork() to create a child process.
+
+Record the current timestamp before executing the command (gettimeofday() for timing).
+
+Execute the command in the child process (exec() family functions).
+
+Measure the time elapsed once the child process completes (parent process handles this).
+
+Shared Memory Implementation:
+
+The child writes the starting time into shared memory before running the command.
+
+The parent reads the starting time from shared memory after the child exits and calculates the elapsed time.
+
+Pipe Implementation:
+
+The child sends the starting time through a pipe to the parent before running the command.
+
+The parent retrieves this time from the pipe after the child process finishes and computes the elapsed duration.

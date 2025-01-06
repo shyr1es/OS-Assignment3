@@ -1,0 +1,13 @@
+3.8 Describe the actions taken by a kernel to context-switch between processes.
+
+Save the current process’s execution state (e.g., registers, program counter) in its Process Control Block (PCB).
+
+Change the state of the current process to "waiting" or "ready" as appropriate.
+
+Use a scheduling algorithm to select the next process to execute.
+
+Load the saved state of the selected process from its PCB into the CPU.
+
+Update the memory management unit (if needed) to reflect the new process's address space.
+
+Resume execution of the new process from its last saved point.

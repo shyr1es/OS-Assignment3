@@ -1,0 +1,5 @@
+Steps to Compile and Run:
+Compile: gcc FileCopy.c -o FileCopy
+Run: ./FileCopy input.txt output.txt
+Replace input.txt with the path of the source file.
+Replace output.txt with the desired destination file.

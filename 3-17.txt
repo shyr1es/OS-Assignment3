@@ -1,0 +1,26 @@
+3.17 What are the benefits and disadvantages of each of the following? 
+Consider both the system level and the programmer level.
+
+a. Synchronous vs. Asynchronous Communication:
+
+Synchronous: Immediate feedback but can cause delays.
+
+Asynchronous: Allows processes to proceed independently but requires additional tracking.
+
+b. Automatic vs. Explicit Buffering:
+
+Automatic: Easier to implement but less control.
+
+Explicit: More control but increased complexity.
+
+c. Send by Copy vs. Send by Reference:
+
+Copy: Avoids shared-state issues but uses more memory.
+
+Reference: Saves memory but risks unintended modifications.
+
+d. Fixed-Sized vs. Variable-Sized Messages:
+
+Fixed-Sized: Predictable but may waste space.
+
+Variable-Sized: Flexible but harder to manage.

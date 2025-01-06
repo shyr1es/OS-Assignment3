@@ -1,0 +1,18 @@
+3.20 Implement a PID manager responsible for managing process identifiers.
+
+The PID manager ensures that process IDs (PIDs) are unique and reusable after a process terminates. 
+Use the following constants:
+#define MIN_PID 300
+#define MAX_PID 5000
+
+Steps:
+
+Use a bitmap to track PID availability (0 = available, 1 = in use).
+
+Implement these functions:
+
+int allocate_map(void): Initializes the PID map.
+
+int allocate_pid(void): Allocates a PID or returns -1 if none are available.
+
+void release_pid(int pid): Marks a PID as available for reuse.

@@ -1,0 +1,15 @@
+Explanation:
+Server Side:
+
+Listens on port 6017.
+Sends a hardcoded quote to any client that connects.
+Client Side:
+
+Connects to the server on port 6017.
+Receives and prints the quote.
+Steps to Compile and Run:
+
+Compile the server: gcc QuoteServer.c -o QuoteServer
+Compile the client: gcc QuoteClient.c -o QuoteClient
+Run the server: ./QuoteServer
+Run the client: ./QuoteClient

@@ -1,0 +1,9 @@
+3.9 Construct a process tree similar to Figure 3.7.
+
+To create a process tree in UNIX/Linux:
+
+Use the command ps -ael to list processes.
+
+Refer to the PPID column (Parent Process ID) to identify parent-child relationships.
+
+Use a tool like pstree or manually map processes by starting with the root process (e.g., init or systemd).

@@ -1,0 +1,20 @@
+3.6 Consider the “exactly once” semantic with respect to the RPC mechanism. 
+Does the algorithm for implementing this semantic execute correctly even if the ACK message sent back 
+to the client is lost due to a network problem? 
+Describe the sequence of messages and discuss whether “exactly once” is still preserved.
+
+If the ACK (acknowledgment) message is lost, the client may resend the RPC request. To maintain the "exactly once" guarantee, 
+the server must identify duplicate requests using a unique identifier for each RPC call. 
+By discarding repeated requests and avoiding re-execution, the semantic is preserved.
+
+Sequence:
+
+Client sends an RPC request to the server.
+
+The server processes the request and sends back an ACK.
+
+If the ACK is lost, the client retries the request.
+
+The server checks the unique ID of the retried request, recognizes it as a duplicate, and does not reprocess it.
+
+Conclusion: The operation still executes exactly once, even with lost ACK messages.
